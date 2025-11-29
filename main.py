@@ -1,6 +1,13 @@
-def main():
-    print("Hello from gm-curation!")
+import os
+import datetime
+import json
+from dotenv import load_dotenv
+from gemini_gateway import GeminiGateway
+from x_gateway import XGateway
 
+load_dotenv()
 
-if __name__ == "__main__":
-    main()
+gateway = GeminiGateway(model_name="gemini-2.5-flash")
+x_gateway = XGateway()
+prompt = "こんにちは。疎通テストです。"
+response = gateway.get_text_content(prompt)
