@@ -2,8 +2,8 @@ import os
 import datetime
 import json
 from dotenv import load_dotenv
-from gemini_gateway import GeminiGateway
-from x_gateway import XGateway
+from gateway.gemini_gateway import GeminiGateway
+from gateway.x_gateway import XGateway
 
 load_dotenv()
 

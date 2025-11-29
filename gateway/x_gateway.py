@@ -1,6 +1,6 @@
 import os
 import tweepy
-from gateway import Gateway
+from .gateway import Gateway
 
 
 class XGateway(Gateway):

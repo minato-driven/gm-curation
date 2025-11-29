@@ -1,6 +1,6 @@
 import os
 import google.generativeai as genai
-from gateway import Gateway
+from .gateway import Gateway
 
 
 class GeminiGateway(Gateway):
